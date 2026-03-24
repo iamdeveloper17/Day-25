@@ -1,0 +1,98 @@
+/* ===== Common Page Styling ===== */
+.login-page,
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 20px;
+}
+
+/* ===== Form Container ===== */
+.form-container {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+
+  h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 28px;
+  }
+
+  p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+
+    a {
+      color: #667eea;
+      text-decoration: none;
+      font-weight: 500;
+    }
+  }
+}
+
+/* ===== Form Groups ===== */
+.form-group {
+  text-align: left;
+  margin-bottom: 18px;
+
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #555;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s;
+
+    &:focus {
+      border-color: #667eea;
+      box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+    }
+  }
+}
+
+/* ===== Button ===== */
+.button {
+  width: 100%;
+  padding: 10px;
+  background: #667eea;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background: #5a67d8;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 480px) {
+  .form-container {
+    padding: 20px 15px;
+
+    h1 {
+      font-size: 22px;
+    }
+  }
+}
